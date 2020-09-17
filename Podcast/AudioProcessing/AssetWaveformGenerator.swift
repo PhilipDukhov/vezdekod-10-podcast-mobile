@@ -28,9 +28,7 @@ class AssetWaveformGenerator {
         WaveformGenerator.backgroundQueue.async {
             let result = self.sliceAsset(downsampleTo: count)
             if !self.cancelled {
-                DispatchQueue.main.async {
-                    completion(result)
-                }
+                completion(result)
             }
         }
     }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PodcastHeaderView" customModule="testProject" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="jO3-iZ-o6Y"/>
+                <outlet property="imageView" destination="3At-4u-5Zf" id="sv3-9e-hDB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="3At-4u-5Zf">
+                    <rect key="frame" x="12" y="10" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3At-4u-5Zf" secondAttribute="height" id="DaB-4m-hg1"/>
+                        <constraint firstAttribute="height" constant="72" id="aZ5-4b-jlT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подкаст прекрасных людей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPm-wq-9sv">
+                    <rect key="frame" x="96" y="10" width="230.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПараDogs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-7i-PCt">
+                    <rect key="frame" x="96" y="39" width="230.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.2470588235" green="0.54117647059999996" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длительность: 59:16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1g-9l-bVN">
+                    <rect key="frame" x="96" y="61" width="230.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.50588235294117645" green="0.5490196078431373" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zA9-CC-zvA">
+                    <rect key="frame" x="12" y="91.5" width="390" height="0.5"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.84705882352941175" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Plu-US-eah"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="JUl-7i-PCt" firstAttribute="top" secondItem="hPm-wq-9sv" secondAttribute="bottom" constant="8" id="3xq-fA-mG5"/>
+                <constraint firstItem="y1g-9l-bVN" firstAttribute="leading" secondItem="JUl-7i-PCt" secondAttribute="leading" id="7Pl-YQ-6rk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zA9-CC-zvA" secondAttribute="trailing" constant="12" id="Cfc-vt-QmG"/>
+                <constraint firstItem="hPm-wq-9sv" firstAttribute="leading" secondItem="3At-4u-5Zf" secondAttribute="trailing" constant="12" id="Mbq-wv-4ex"/>
+                <constraint firstItem="hPm-wq-9sv" firstAttribute="top" secondItem="3At-4u-5Zf" secondAttribute="top" id="Rth-Kv-jpi"/>
+                <constraint firstItem="zA9-CC-zvA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="T7c-kr-XoO"/>
+                <constraint firstItem="3At-4u-5Zf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="Vep-kS-pGe"/>
+                <constraint firstItem="3At-4u-5Zf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Vqo-C2-mXf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3At-4u-5Zf" secondAttribute="bottom" constant="10" id="hqo-cS-mOl"/>
+                <constraint firstItem="y1g-9l-bVN" firstAttribute="top" secondItem="JUl-7i-PCt" secondAttribute="bottom" constant="5" id="lSa-LC-K2d"/>
+                <constraint firstItem="JUl-7i-PCt" firstAttribute="trailing" secondItem="hPm-wq-9sv" secondAttribute="trailing" id="lSt-zc-kvJ"/>
+                <constraint firstItem="zA9-CC-zvA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="mZf-Qq-YeV"/>
+                <constraint firstItem="JUl-7i-PCt" firstAttribute="leading" secondItem="hPm-wq-9sv" secondAttribute="leading" id="wGW-Xg-w3y"/>
+                <constraint firstItem="y1g-9l-bVN" firstAttribute="trailing" secondItem="JUl-7i-PCt" secondAttribute="trailing" id="z0V-3T-gSl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-176.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dog" width="72" height="72"/>
+    </resources>
+</document>

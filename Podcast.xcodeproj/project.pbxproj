@@ -29,6 +29,31 @@
 		D51E0E6E25133316000C6D04 /* AudioEditingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E5725133316000C6D04 /* AudioEditingButton.swift */; };
 		D51E0E6F25133316000C6D04 /* CG+RoundedScaled.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E5925133316000C6D04 /* CG+RoundedScaled.swift */; };
 		D51E0E7025133316000C6D04 /* UIView+InspectableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E5A25133316000C6D04 /* UIView+InspectableLayer.swift */; };
+		D51E0E8B2513585A000C6D04 /* LoadedPodcastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E752513585A000C6D04 /* LoadedPodcastView.xib */; };
+		D51E0E8C2513585A000C6D04 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E762513585A000C6D04 /* NavigationBarView.xib */; };
+		D51E0E8D2513585A000C6D04 /* MainScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E772513585A000C6D04 /* MainScreenView.xib */; };
+		D51E0E8E2513585A000C6D04 /* PodcastDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E782513585A000C6D04 /* PodcastDescriptionView.swift */; };
+		D51E0E8F2513585A000C6D04 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E792513585A000C6D04 /* NavigationBarView.swift */; };
+		D51E0E902513585A000C6D04 /* PodcastTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E7A2513585A000C6D04 /* PodcastTypeView.xib */; };
+		D51E0E912513585A000C6D04 /* TimeintervalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E7B2513585A000C6D04 /* TimeintervalTableViewCell.swift */; };
+		D51E0E922513585A000C6D04 /* PodcastDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E7C2513585A000C6D04 /* PodcastDescriptionView.xib */; };
+		D51E0E932513585A000C6D04 /* LoadPodcastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E7D2513585A000C6D04 /* LoadPodcastView.xib */; };
+		D51E0E942513585A000C6D04 /* PodcastDescriptionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E7E2513585A000C6D04 /* PodcastDescriptionTitleView.swift */; };
+		D51E0E952513585A000C6D04 /* PodcastHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E7F2513585A000C6D04 /* PodcastHeaderView.xib */; };
+		D51E0E962513585A000C6D04 /* LoadedPodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E802513585A000C6D04 /* LoadedPodcastView.swift */; };
+		D51E0E972513585A000C6D04 /* PodcastDescriptionTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E812513585A000C6D04 /* PodcastDescriptionTitleView.xib */; };
+		D51E0E982513585A000C6D04 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E822513585A000C6D04 /* NameView.swift */; };
+		D51E0E992513585A000C6D04 /* PodcastHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E832513585A000C6D04 /* PodcastHeaderView.swift */; };
+		D51E0E9A2513585A000C6D04 /* NameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E842513585A000C6D04 /* NameView.xib */; };
+		D51E0E9B2513585A000C6D04 /* LoadPodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E852513585A000C6D04 /* LoadPodcastView.swift */; };
+		D51E0E9C2513585A000C6D04 /* PodcastPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E862513585A000C6D04 /* PodcastPrivacyView.xib */; };
+		D51E0E9D2513585A000C6D04 /* PodcastPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E872513585A000C6D04 /* PodcastPrivacyView.swift */; };
+		D51E0E9E2513585A000C6D04 /* TimeintervalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51E0E882513585A000C6D04 /* TimeintervalTableViewCell.xib */; };
+		D51E0E9F2513585A000C6D04 /* PodcastTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E892513585A000C6D04 /* PodcastTypeView.swift */; };
+		D51E0EA02513585A000C6D04 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0E8A2513585A000C6D04 /* MainScreenView.swift */; };
+		D51E0EA525135862000C6D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0EA225135862000C6D04 /* ViewController.swift */; };
+		D51E0EA625135862000C6D04 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0EA325135862000C6D04 /* ThirdViewController.swift */; };
+		D51E0EA725135862000C6D04 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E0EA425135862000C6D04 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +82,31 @@
 		D51E0E5725133316000C6D04 /* AudioEditingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEditingButton.swift; sourceTree = "<group>"; };
 		D51E0E5925133316000C6D04 /* CG+RoundedScaled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CG+RoundedScaled.swift"; sourceTree = "<group>"; };
 		D51E0E5A25133316000C6D04 /* UIView+InspectableLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+InspectableLayer.swift"; sourceTree = "<group>"; };
+		D51E0E752513585A000C6D04 /* LoadedPodcastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadedPodcastView.xib; sourceTree = "<group>"; };
+		D51E0E762513585A000C6D04 /* NavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		D51E0E772513585A000C6D04 /* MainScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreenView.xib; sourceTree = "<group>"; };
+		D51E0E782513585A000C6D04 /* PodcastDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastDescriptionView.swift; sourceTree = "<group>"; };
+		D51E0E792513585A000C6D04 /* NavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		D51E0E7A2513585A000C6D04 /* PodcastTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcastTypeView.xib; sourceTree = "<group>"; };
+		D51E0E7B2513585A000C6D04 /* TimeintervalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeintervalTableViewCell.swift; sourceTree = "<group>"; };
+		D51E0E7C2513585A000C6D04 /* PodcastDescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcastDescriptionView.xib; sourceTree = "<group>"; };
+		D51E0E7D2513585A000C6D04 /* LoadPodcastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadPodcastView.xib; sourceTree = "<group>"; };
+		D51E0E7E2513585A000C6D04 /* PodcastDescriptionTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastDescriptionTitleView.swift; sourceTree = "<group>"; };
+		D51E0E7F2513585A000C6D04 /* PodcastHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcastHeaderView.xib; sourceTree = "<group>"; };
+		D51E0E802513585A000C6D04 /* LoadedPodcastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadedPodcastView.swift; sourceTree = "<group>"; };
+		D51E0E812513585A000C6D04 /* PodcastDescriptionTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcastDescriptionTitleView.xib; sourceTree = "<group>"; };
+		D51E0E822513585A000C6D04 /* NameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		D51E0E832513585A000C6D04 /* PodcastHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastHeaderView.swift; sourceTree = "<group>"; };
+		D51E0E842513585A000C6D04 /* NameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameView.xib; sourceTree = "<group>"; };
+		D51E0E852513585A000C6D04 /* LoadPodcastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPodcastView.swift; sourceTree = "<group>"; };
+		D51E0E862513585A000C6D04 /* PodcastPrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcastPrivacyView.xib; sourceTree = "<group>"; };
+		D51E0E872513585A000C6D04 /* PodcastPrivacyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastPrivacyView.swift; sourceTree = "<group>"; };
+		D51E0E882513585A000C6D04 /* TimeintervalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeintervalTableViewCell.xib; sourceTree = "<group>"; };
+		D51E0E892513585A000C6D04 /* PodcastTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTypeView.swift; sourceTree = "<group>"; };
+		D51E0E8A2513585A000C6D04 /* MainScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		D51E0EA225135862000C6D04 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D51E0EA325135862000C6D04 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D51E0EA425135862000C6D04 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EF9190885B8419F9FB2A9FE4 /* Pods_Podcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Podcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				D51E0E4D25133316000C6D04 /* Main.storyboard */,
+				D51E0EA125135862000C6D04 /* Controllers */,
+				D51E0E742513585A000C6D04 /* View */,
 				D51E0E4F25133316000C6D04 /* Audio editing */,
 				D51E0E5225133316000C6D04 /* Views */,
 				D51E0E5825133316000C6D04 /* Helpers */,
@@ -198,6 +250,45 @@
 				D51E0E5A25133316000C6D04 /* UIView+InspectableLayer.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D51E0E742513585A000C6D04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D51E0E762513585A000C6D04 /* NavigationBarView.xib */,
+				D51E0E792513585A000C6D04 /* NavigationBarView.swift */,
+				D51E0E752513585A000C6D04 /* LoadedPodcastView.xib */,
+				D51E0E802513585A000C6D04 /* LoadedPodcastView.swift */,
+				D51E0E7D2513585A000C6D04 /* LoadPodcastView.xib */,
+				D51E0E852513585A000C6D04 /* LoadPodcastView.swift */,
+				D51E0E772513585A000C6D04 /* MainScreenView.xib */,
+				D51E0E782513585A000C6D04 /* PodcastDescriptionView.swift */,
+				D51E0E7A2513585A000C6D04 /* PodcastTypeView.xib */,
+				D51E0E7B2513585A000C6D04 /* TimeintervalTableViewCell.swift */,
+				D51E0E7C2513585A000C6D04 /* PodcastDescriptionView.xib */,
+				D51E0E7E2513585A000C6D04 /* PodcastDescriptionTitleView.swift */,
+				D51E0E7F2513585A000C6D04 /* PodcastHeaderView.xib */,
+				D51E0E812513585A000C6D04 /* PodcastDescriptionTitleView.xib */,
+				D51E0E842513585A000C6D04 /* NameView.xib */,
+				D51E0E822513585A000C6D04 /* NameView.swift */,
+				D51E0E832513585A000C6D04 /* PodcastHeaderView.swift */,
+				D51E0E862513585A000C6D04 /* PodcastPrivacyView.xib */,
+				D51E0E872513585A000C6D04 /* PodcastPrivacyView.swift */,
+				D51E0E882513585A000C6D04 /* TimeintervalTableViewCell.xib */,
+				D51E0E892513585A000C6D04 /* PodcastTypeView.swift */,
+				D51E0E8A2513585A000C6D04 /* MainScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D51E0EA125135862000C6D04 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D51E0EA225135862000C6D04 /* ViewController.swift */,
+				D51E0EA325135862000C6D04 /* ThirdViewController.swift */,
+				D51E0EA425135862000C6D04 /* SecondViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +352,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51E0E6725133316000C6D04 /* Main.storyboard in Resources */,
+				D51E0E8B2513585A000C6D04 /* LoadedPodcastView.xib in Resources */,
 				D51E0E5F25133316000C6D04 /* LaunchScreen.storyboard in Resources */,
+				D51E0E9E2513585A000C6D04 /* TimeintervalTableViewCell.xib in Resources */,
 				D51E0E5E25133316000C6D04 /* track.m4a in Resources */,
+				D51E0E8C2513585A000C6D04 /* NavigationBarView.xib in Resources */,
+				D51E0E932513585A000C6D04 /* LoadPodcastView.xib in Resources */,
+				D51E0E952513585A000C6D04 /* PodcastHeaderView.xib in Resources */,
+				D51E0E922513585A000C6D04 /* PodcastDescriptionView.xib in Resources */,
 				D51E0E5D25133316000C6D04 /* Assets.xcassets in Resources */,
+				D51E0E9A2513585A000C6D04 /* NameView.xib in Resources */,
+				D51E0E8D2513585A000C6D04 /* MainScreenView.xib in Resources */,
+				D51E0E902513585A000C6D04 /* PodcastTypeView.xib in Resources */,
+				D51E0E9C2513585A000C6D04 /* PodcastPrivacyView.xib in Resources */,
+				D51E0E972513585A000C6D04 /* PodcastDescriptionTitleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,17 +420,31 @@
 			files = (
 				D51E0E6E25133316000C6D04 /* AudioEditingButton.swift in Sources */,
 				D51E0E29251332A2000C6D04 /* AppDelegate.swift in Sources */,
+				D51E0E942513585A000C6D04 /* PodcastDescriptionTitleView.swift in Sources */,
 				D51E0E6D25133316000C6D04 /* TimelineView.swift in Sources */,
+				D51E0E9D2513585A000C6D04 /* PodcastPrivacyView.swift in Sources */,
 				D51E0E6F25133316000C6D04 /* CG+RoundedScaled.swift in Sources */,
+				D51E0E8E2513585A000C6D04 /* PodcastDescriptionView.swift in Sources */,
+				D51E0E912513585A000C6D04 /* TimeintervalTableViewCell.swift in Sources */,
 				D51E0E6A25133316000C6D04 /* WaveformView.swift in Sources */,
 				D51E0E6525133316000C6D04 /* Podcast.swift in Sources */,
+				D51E0E9F2513585A000C6D04 /* PodcastTypeView.swift in Sources */,
 				D51E0E7025133316000C6D04 /* UIView+InspectableLayer.swift in Sources */,
 				D51E0E6425133316000C6D04 /* AssetWaveformGenerator.swift in Sources */,
+				D51E0E982513585A000C6D04 /* NameView.swift in Sources */,
+				D51E0E992513585A000C6D04 /* PodcastHeaderView.swift in Sources */,
 				D51E0E6925133316000C6D04 /* EditAudioViewController.swift in Sources */,
 				D51E0E6C25133316000C6D04 /* TextField.swift in Sources */,
 				D51E0E6B25133316000C6D04 /* AudioSlider.swift in Sources */,
+				D51E0E9B2513585A000C6D04 /* LoadPodcastView.swift in Sources */,
+				D51E0E962513585A000C6D04 /* LoadedPodcastView.swift in Sources */,
+				D51E0EA525135862000C6D04 /* ViewController.swift in Sources */,
 				D51E0E6325133316000C6D04 /* WaveformGenerator.swift in Sources */,
+				D51E0EA625135862000C6D04 /* ThirdViewController.swift in Sources */,
+				D51E0E8F2513585A000C6D04 /* NavigationBarView.swift in Sources */,
 				D51E0E6825133316000C6D04 /* TimecodeCell.swift in Sources */,
+				D51E0EA02513585A000C6D04 /* MainScreenView.swift in Sources */,
+				D51E0EA725135862000C6D04 /* SecondViewController.swift in Sources */,
 				D51E0E6625133316000C6D04 /* AudioFile.swift in Sources */,
 				D51E0E2B251332A2000C6D04 /* SceneDelegate.swift in Sources */,
 				D51E0E6025133316000C6D04 /* Assets.swift in Sources */,

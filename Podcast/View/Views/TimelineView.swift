@@ -138,7 +138,7 @@ class TimelineView: UIView {
 }
 
 
-fileprivate let disabledActions = [
+let disabledActions = [
     "position": NSNull(),
     "contents": NSNull(),
     "bounds": NSNull(),

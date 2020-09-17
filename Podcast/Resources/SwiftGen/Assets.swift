@@ -43,6 +43,16 @@ internal enum Asset {
     internal static let revert = ImageAsset(name: "Icons/revert")
     internal static let scissors = ImageAsset(name: "Icons/scissors")
   }
+  internal static let activeCheckbox = ImageAsset(name: "activeCheckbox")
+  internal static let backButton = ImageAsset(name: "backButton")
+  internal static let dismiss = ImageAsset(name: "dismiss")
+  internal static let dog = ImageAsset(name: "dog")
+  internal static let gallery = ImageAsset(name: "gallery")
+  internal static let inactiveCheckbox = ImageAsset(name: "inactiveCheckbox")
+  internal static let lastScreen = ImageAsset(name: "lastScreen")
+  internal static let mainScreen = ImageAsset(name: "mainScreen")
+  internal static let nextButton = ImageAsset(name: "nextButton")
+  internal static let podcast = ImageAsset(name: "podcast")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

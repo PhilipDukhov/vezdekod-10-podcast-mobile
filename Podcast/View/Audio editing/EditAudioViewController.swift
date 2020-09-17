@@ -21,25 +21,16 @@ class EditAudioViewController: UIViewController {
     @IBOutlet private var audioSlider: AudioSlider!
     @IBOutlet private var waveformView: WaveformView!
     @IBOutlet private var timelineView: TimelineView!
+    @IBOutlet private weak var navigationBarView: NavigationBarView!
     
     private let audioPlayer = AudioPlayer()
     
+    var endEditing: ((AudioFile) -> Void)!
+    
     var audioFile: AudioFile! {
         didSet {
-            let audioFileUpdated = oldValue == nil ||
-                (audioFile.backgroundAudio != nil) != (oldValue.backgroundAudio != nil) ||
-                    audioFile.segments != oldValue.segments ||
-                    audioFile.rampAtTheStart != oldValue.rampAtTheStart ||
-                    audioFile.rampAtTheEnd != oldValue.rampAtTheEnd
-            if audioFileUpdated {
-                refreshAudioFile()
-            }
-            musicButton.isSelected = audioFile.backgroundAudio != nil
-            rampAtTheStartButton.isSelected = audioFile.rampAtTheStart
-            rampAtTheEndButton.isSelected = audioFile.rampAtTheEnd
-            if oldValue != nil {
-                updateTimecodesTableView(oldValue)
-            }
+            guard isViewLoaded else { return }
+            updateAudioFile(oldValue)
         }
     }
     
@@ -50,8 +41,13 @@ class EditAudioViewController: UIViewController {
         tableView.sectionFooterHeight = UITableView.automaticDimension
         tableView.estimatedSectionFooterHeight = 1
         
+        navigationBarView.configure(with: "Редактирование", delegate: self)
         audioPlayer.delegate = self
-        audioFile = .init(url: Bundle.main.url(forResource: "track", withExtension: "m4a")!)
+        if audioFile == nil {
+            audioFile = .init(url: Bundle.main.url(forResource: "track", withExtension: "m4a")!)
+        } else {
+            updateAudioFile()
+        }
         undoButton.isEnabled = false
         trimButton.isEnabled = false
         audioSlider.thumbValueChanged = { [weak self] in
@@ -135,8 +131,25 @@ class EditAudioViewController: UIViewController {
         }
         
         let assetGenerator = AssetWaveformGenerator(asset: asset, audioMix: audioMix)
-        assetGenerator.generateSamples(count: Int(waveformView.bounds.width / 6)) {
-            self.waveformView.samples = $0
+        assetGenerator.generateSamples(count: Int(waveformView.bounds.width / 6)) { samples in
+            let step = asset.duration.seconds / TimeInterval(samples.count)
+            var value = step
+            var originals = [TimeInterval]()
+            for segment in asset.tracks[0].segments {
+                while
+                    originals.count < samples.count,
+                    case let cmtime = value.cmTime(preferredTimescale: 44100),
+                    segment.timeMapping.target.containsTime(cmtime)
+                {
+                    originals.append((segment.timeMapping.source.start + cmtime - segment.timeMapping.target.start).seconds)
+                    value += step
+                }
+            }
+            while originals.count < samples.count {
+                originals.append(originals.last! + 1)
+            }
+            
+            self.waveformView.samples = zip(samples, originals).map { WaveformView.Sample(sourceTime: $0.1, value: $0.0) }
         }
         } catch {
             print(error)
@@ -169,6 +182,23 @@ class EditAudioViewController: UIViewController {
             tableView.insertRows(at: insertedIndexPaths, with: .right)
             tableView.reloadRows(at: updatedIndexPaths, with: .none)
         })
+    }
+    
+    private func updateAudioFile(_ oldValue: AudioFile? = nil) {
+        let audioFileUpdated = oldValue == nil ||
+            (audioFile.backgroundAudio != nil) != (oldValue?.backgroundAudio != nil) ||
+            audioFile.segments != oldValue?.segments ||
+            audioFile.rampAtTheStart != oldValue?.rampAtTheStart ||
+            audioFile.rampAtTheEnd != oldValue?.rampAtTheEnd
+        if audioFileUpdated {
+            refreshAudioFile()
+        }
+        musicButton.isSelected = audioFile.backgroundAudio != nil
+        rampAtTheStartButton.isSelected = audioFile.rampAtTheStart
+        rampAtTheEndButton.isSelected = audioFile.rampAtTheEnd
+        if let oldValue = oldValue {
+            updateTimecodesTableView(oldValue)
+        }
     }
 }
 
@@ -307,5 +337,13 @@ extension EditAudioViewController: AudioPlayerDelegate {
     
     func audioPlayer(_ audioPlayer: AudioPlayer, currentTimeChanged time: TimeInterval) {
         audioSlider.thumbValue = time
+    }
+}
+
+
+extension EditAudioViewController: NavigationBarViewDelegate {
+    func backButtonTapped() {
+        self.navigationController?.popViewController(animated: true)
+        self.endEditing(audioFile)
     }
 }

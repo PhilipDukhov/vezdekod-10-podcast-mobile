@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadedPodcastView" customModule="Podcast" customModuleProvider="target">
+            <connections>
+                <outlet property="changeButton" destination="biC-Rw-OQa" id="AbO-v8-y3P"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ikY-1C-T0R"/>
+                <outlet property="descriptionLabel" destination="Eqq-OP-Hgb" id="SqK-DO-8xT"/>
+                <outlet property="podcastBackgroundView" destination="v5y-12-Jf4" id="ZPp-g1-9xi"/>
+                <outlet property="podcastImageView" destination="M1X-5Q-ACl" id="fu7-KO-QHR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biC-Rw-OQa">
+                    <rect key="frame" x="12" y="115" width="390" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="mz0-iY-ZyA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <state key="normal" title="Редактировать аудиозапись">
+                        <color key="titleColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAction" destination="-1" eventType="touchUpInside" id="BxE-6m-qEI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqq-OP-Hgb">
+                    <rect key="frame" x="12" y="68" width="390" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.50588235294117645" green="0.5490196078431373" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5y-12-Jf4">
+                    <rect key="frame" x="12" y="12" width="48" height="48"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="podcast" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-5Q-ACl">
+                            <rect key="frame" x="10" y="10" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="Oab-jM-X1J"/>
+                                <constraint firstAttribute="width" secondItem="M1X-5Q-ACl" secondAttribute="height" id="nW9-dN-t6W"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="M1X-5Q-ACl" firstAttribute="centerY" secondItem="v5y-12-Jf4" secondAttribute="centerY" id="2kp-eo-De9"/>
+                        <constraint firstAttribute="width" secondItem="v5y-12-Jf4" secondAttribute="height" multiplier="1:1" id="6R1-7d-Cd5"/>
+                        <constraint firstAttribute="height" constant="48" id="ku5-Fw-PSV"/>
+                        <constraint firstItem="M1X-5Q-ACl" firstAttribute="centerX" secondItem="v5y-12-Jf4" secondAttribute="centerX" id="sfk-5N-7xh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My_podcast.mp3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I0-Vn-9Eg">
+                    <rect key="frame" x="72" y="12" width="132" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59:16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-KV-e6Y">
+                    <rect key="frame" x="367.5" y="12" width="34.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.63529411764705879" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osi-hP-0o8">
+                    <rect key="frame" x="12" y="159.5" width="390" height="0.5"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.84705882352941175" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="62f-R7-gUJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="biC-Rw-OQa" secondAttribute="bottom" constant="10" id="1f2-KC-ksI"/>
+                <constraint firstItem="osi-hP-0o8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="BJg-Nn-fek"/>
+                <constraint firstItem="7I0-Vn-9Eg" firstAttribute="top" secondItem="v5y-12-Jf4" secondAttribute="top" id="CVL-wp-iCw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="biC-Rw-OQa" secondAttribute="trailing" constant="12" id="FPD-W5-xCR"/>
+                <constraint firstItem="nhS-KV-e6Y" firstAttribute="top" secondItem="7I0-Vn-9Eg" secondAttribute="top" id="GIR-fO-eVn"/>
+                <constraint firstItem="7I0-Vn-9Eg" firstAttribute="bottom" secondItem="v5y-12-Jf4" secondAttribute="bottom" id="OQP-6G-d7W"/>
+                <constraint firstAttribute="trailing" secondItem="osi-hP-0o8" secondAttribute="trailing" constant="12" id="RZe-Iz-Ypy"/>
+                <constraint firstItem="v5y-12-Jf4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="YNg-Jn-9nV"/>
+                <constraint firstItem="biC-Rw-OQa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="aQf-L4-8CA"/>
+                <constraint firstAttribute="trailing" secondItem="nhS-KV-e6Y" secondAttribute="trailing" constant="12" id="aci-4w-Owq"/>
+                <constraint firstItem="Eqq-OP-Hgb" firstAttribute="trailing" secondItem="biC-Rw-OQa" secondAttribute="trailing" id="b1q-E5-eqr"/>
+                <constraint firstItem="Eqq-OP-Hgb" firstAttribute="leading" secondItem="biC-Rw-OQa" secondAttribute="leading" id="cR1-fa-9x2"/>
+                <constraint firstItem="biC-Rw-OQa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Eqq-OP-Hgb" secondAttribute="bottom" constant="8" id="fha-Ys-DBT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="osi-hP-0o8" secondAttribute="bottom" id="rsg-gj-Sr0"/>
+                <constraint firstItem="biC-Rw-OQa" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="tRk-Hy-pwM"/>
+                <constraint firstItem="v5y-12-Jf4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="tuD-vu-hie"/>
+                <constraint firstItem="Eqq-OP-Hgb" firstAttribute="top" secondItem="v5y-12-Jf4" secondAttribute="bottom" constant="8" id="vtB-AV-Std"/>
+                <constraint firstItem="nhS-KV-e6Y" firstAttribute="bottom" secondItem="7I0-Vn-9Eg" secondAttribute="bottom" id="xZG-kE-oja"/>
+                <constraint firstItem="7I0-Vn-9Eg" firstAttribute="leading" secondItem="v5y-12-Jf4" secondAttribute="trailing" constant="12" id="zg6-2P-XPs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-135.26785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="podcast" width="28" height="28"/>
+    </resources>
+</document>

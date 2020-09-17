@@ -1,6 +1,6 @@
 xcassets:
   inputs:
-    - vezdekod-10-podcast-mobile/Resources/Assets.xcassets
+    - Podcast/Resources/Assets.xcassets
   outputs:
     - templateName: swift4
-      output: vezdekod-10-podcast-mobile/Resources/SwiftGen/Assets.swift
+      output: Podcast/Resources/SwiftGen/Assets.swift

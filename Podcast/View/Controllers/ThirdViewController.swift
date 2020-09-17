@@ -24,7 +24,10 @@ final class ThirdViewController: UIViewController {
         tableView.dataSource = self
         tableView.reloadData()
     }
-
+    @IBAction func action(_ sender: Any) {
+        performSegue(withIdentifier: "finish", sender: nil)
+    }
+    
 }
 
 extension ThirdViewController: UITableViewDelegate, UITableViewDataSource {

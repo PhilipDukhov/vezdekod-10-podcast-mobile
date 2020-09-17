@@ -31,6 +31,7 @@ internal enum Asset {
     internal static let timelineGray = ColorAsset(name: "Colors/timelineGray")
     internal static let white = ColorAsset(name: "Colors/white")
   }
+  internal static let frame79 = ImageAsset(name: "Frame 79")
   internal enum Icons {
     internal static let addTimecode = ImageAsset(name: "Icons/addTimecode")
     internal static let decay = ImageAsset(name: "Icons/decay")

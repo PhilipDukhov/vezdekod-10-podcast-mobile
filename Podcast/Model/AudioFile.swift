@@ -87,7 +87,7 @@ struct AudioFile {
         audioMix.inputParameters = composition.tracks.map { track in
             let audioMixInputParameters = AVMutableAudioMixInputParameters()
             audioMixInputParameters.trackID = track.trackID
-            let duration = max(2, composition.duration.seconds / 10)
+            let duration = min(2, composition.duration.seconds / 10)
             let timescale = composition.duration.timescale
             audioMixInputParameters.setVolume(1, at: .zero)
             if rampAtTheStart {

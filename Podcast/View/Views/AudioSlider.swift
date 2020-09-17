@@ -189,8 +189,10 @@ class AudioSlider: UIControl {
         }
     }
     
-    @IBAction private func tap() {
-        trimmingViewVisible.toggle()
+    @IBAction private func tap(_ tapGR: UIGestureRecognizer) {
+        if tapGR.location(in: self).y < backgroundView.frame.maxY {
+            trimmingViewVisible.toggle()
+        }
     }
     
     // MARK: - Helpers

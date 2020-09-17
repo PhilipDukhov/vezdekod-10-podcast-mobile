@@ -492,7 +492,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="WeV-yp-gqK">
                     <connections>
-                        <action selector="tap" destination="FXJ-vf-Bf5" id="IGH-Qd-x2Y"/>
+                        <action selector="tap:" destination="FXJ-vf-Bf5" id="GfK-sp-NQO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

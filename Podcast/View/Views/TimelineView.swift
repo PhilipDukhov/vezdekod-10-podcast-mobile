@@ -115,7 +115,7 @@ class TimelineView: UIView {
             result.contentsScale = UIScreen.main.scale
             result.alignmentMode = .center
             result.foregroundColor = Asset.Colors.timelineGray.color.cgColor
-            result.setUIFont(UIFont.systemFont(ofSize: 9))
+            result.fontSize = 9
             result.actions = disabledActions
         }
         layer.addSublayer(result)
@@ -134,20 +134,6 @@ class TimelineView: UIView {
         }
         layer.addSublayer(result)
         return result
-    }
-}
-
-
-
-extension CATextLayer {
-    func setUIFont(_ uifont: UIFont?) {
-        if let uifont = uifont {
-            font = uifont.fontName as CFTypeRef
-            fontSize = uifont.pointSize
-        }
-        else {
-            font = nil
-        }
     }
 }
 

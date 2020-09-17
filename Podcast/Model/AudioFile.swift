@@ -52,7 +52,7 @@ struct AudioFile {
         self.url = url
         asset = AVURLAsset(url: url)
         segments = [0...asset.duration.seconds]
-        _timecodes = [.init(title: "", startTime: .random(in: 1...20)) ]
+        _timecodes = []
     }
     
     func generateAudioInfo() throws -> (AVComposition, AVAudioMix) {

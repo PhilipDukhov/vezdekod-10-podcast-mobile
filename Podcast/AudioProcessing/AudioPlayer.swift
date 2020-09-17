@@ -55,8 +55,7 @@ class AudioPlayer {
     
     func setAsset(asset: AVAsset, audioMix: AVAudioMix) {
         updatingAsset = true
-        routeUpdated()
-        let currentTime = player.currentTime()
+        var currentTime = player.currentTime()
         let item = AVPlayerItem(asset: asset)
         player.replaceCurrentItem(with: item)
         player.currentItem?.audioMix = audioMix
@@ -67,6 +66,9 @@ class AudioPlayer {
             }
             self.updatingAsset = false
             self.timeChanged()
+        }
+        if currentTime >= asset.duration {
+            currentTime = .zero
         }
         if currentTime.value > 0 {
             player.seek(to: currentTime) {
@@ -90,16 +92,11 @@ class AudioPlayer {
             { [weak self] _ in self?.timeChanged() },
         ]
         
-        routeUpdated()
         notificationObservers += [
             NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
                                                    object: nil,
                                                    queue: .main)
             { [weak self] _ in self?.timeChanged() },
-            NotificationCenter.default.addObserver(forName: AVAudioSession.routeChangeNotification,
-                                                   object: nil,
-                                                   queue: .main)
-            { [weak self] _ in self?.routeUpdated() },
         ]
     }
     
@@ -112,21 +109,12 @@ class AudioPlayer {
         }
     }
     
-    private func routeUpdated() {
-        guard let output = AVAudioSession.sharedInstance().currentRoute.outputs.first else { return }
-        let overridePort: AVAudioSession.PortOverride
-        if output.portType == .builtInSpeaker {
-            player.volume = 0.05
-            overridePort = .speaker
-        } else {
-            player.volume = 1
-            overridePort = .none
-        }
-        try? AVAudioSession.sharedInstance().overrideOutputAudioPort(overridePort)
-    }
-    
     private func timeChanged() {
         guard !updatingAsset else { return }
         delegate?.audioPlayer(self, currentTimeChanged: currentTime)
+        if player.currentItem?.duration == player.currentTime() {
+            pause()
+            seek(0)
+        }
     }
 }

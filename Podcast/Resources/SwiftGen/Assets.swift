@@ -28,6 +28,7 @@ internal enum Asset {
     internal static let lightText = ColorAsset(name: "Colors/lightText")
     internal static let pointerRed = ColorAsset(name: "Colors/pointerRed")
     internal static let selectionGray = ColorAsset(name: "Colors/selectionGray")
+    internal static let timelineGray = ColorAsset(name: "Colors/timelineGray")
     internal static let white = ColorAsset(name: "Colors/white")
   }
   internal enum Icons {

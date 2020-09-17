@@ -20,6 +20,7 @@ class EditAudioViewController: UIViewController {
     @IBOutlet private var rampAtTheEndButton: UIButton!
     @IBOutlet private var audioSlider: AudioSlider!
     @IBOutlet private var waveformView: WaveformView!
+    @IBOutlet private var timelineView: TimelineView!
     
     private let audioPlayer = AudioPlayer()
     
@@ -125,7 +126,7 @@ class EditAudioViewController: UIViewController {
             let (asset, audioMix) = try audioFile.generateAudioInfo()
        
         audioPlayer.setAsset(asset: asset, audioMix: audioMix)
-        
+        timelineView.visibleRange = 0...asset.duration.seconds
         audioSlider.maxValue = asset.duration.seconds
         audioSlider.minSelectionRange = max(1, audioSlider.maxValue / 10)
         UIView.animate(withDuration: 0.3) {
@@ -134,7 +135,7 @@ class EditAudioViewController: UIViewController {
         }
         
         let assetGenerator = AssetWaveformGenerator(asset: asset, audioMix: audioMix)
-        assetGenerator.generateSamples(count: .init(waveformView.bounds.width / 6)) {
+        assetGenerator.generateSamples(count: Int(waveformView.bounds.width / 6)) {
             self.waveformView.samples = $0
         }
         } catch {
@@ -230,7 +231,7 @@ extension EditAudioViewController: UITableViewDelegate {
         let timecode = audioFile.timecodes[indexPath.row]
         cell.props = .init(
             title: timecode.title,
-            timestamp: timecode.startTimeString,
+            timestamp: timecode.startTime.timeString,
             remove: { [weak self] in
                 self?.audioFile.timecodes.removeAll { $0.id == timecode.id }
             }, titleChanged: { [weak self] title in

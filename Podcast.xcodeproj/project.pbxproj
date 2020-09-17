@@ -173,8 +173,8 @@
 		D51E0E4F25133316000C6D04 /* Audio editing */ = {
 			isa = PBXGroup;
 			children = (
-				D51E0E5025133316000C6D04 /* TimecodeCell.swift */,
 				D51E0E5125133316000C6D04 /* EditAudioViewController.swift */,
+				D51E0E5025133316000C6D04 /* TimecodeCell.swift */,
 			);
 			path = "Audio editing";
 			sourceTree = "<group>";
@@ -182,11 +182,11 @@
 		D51E0E5225133316000C6D04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D51E0E5325133316000C6D04 /* WaveformView.swift */,
+				D51E0E5725133316000C6D04 /* AudioEditingButton.swift */,
 				D51E0E5425133316000C6D04 /* AudioSlider.swift */,
 				D51E0E5525133316000C6D04 /* TextField.swift */,
 				D51E0E5625133316000C6D04 /* TimelineView.swift */,
-				D51E0E5725133316000C6D04 /* AudioEditingButton.swift */,
+				D51E0E5325133316000C6D04 /* WaveformView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

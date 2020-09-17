@@ -11,7 +11,7 @@
         <!--Edit Audio View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EditAudioViewController" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EditAudioViewController" customModule="Podcast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,13 +19,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-Ta-n44">
                                 <rect key="frame" x="12" y="56" width="390" height="192"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXJ-vf-Bf5" customClass="AudioSlider" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXJ-vf-Bf5" customClass="AudioSlider" customModule="Podcast" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="192"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qx1-qe-Tcs">
                                                 <rect key="frame" x="0.0" y="10" width="390" height="182"/>
                                                 <subviews>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBK-sQ-M5W">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBK-sQ-M5W" customClass="TimelineView" customModule="Podcast" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="26"/>
                                                         <color key="backgroundColor" name="Colors/selectionGray"/>
                                                         <constraints>
@@ -58,7 +58,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MT2-lM-2du" customClass="WaveformView" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MT2-lM-2du" customClass="WaveformView" customModule="Podcast" customModuleProvider="target">
                                                 <rect key="frame" x="1" y="36" width="388" height="96"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
@@ -290,7 +290,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ozc-Ta-bKG">
                                                 <rect key="frame" x="234" y="0.0" width="140" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5n-X1-fHg" customClass="AudioEditingButton" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5n-X1-fHg" customClass="AudioEditingButton" customModule="Podcast" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="44" id="3Jm-KZ-tyZ"/>
@@ -306,7 +306,7 @@
                                                             <action selector="musicButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="phs-Ph-LNg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAl-en-X3l" customClass="AudioEditingButton" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAl-en-X3l" customClass="AudioEditingButton" customModule="Podcast" customModuleProvider="target">
                                                         <rect key="frame" x="48" y="0.0" width="44" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="44" id="46N-Zz-9Rp"/>
@@ -322,7 +322,7 @@
                                                             <action selector="rampAtTheStartButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="30Z-hb-0lm"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaY-bk-ztE" customClass="AudioEditingButton" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaY-bk-ztE" customClass="AudioEditingButton" customModule="Podcast" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="44" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="44" id="5LE-ZO-869"/>
@@ -360,7 +360,7 @@
                                 <rect key="frame" x="0.0" y="260" width="414" height="636"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="timecode" id="PWg-9M-9Vz" customClass="TimecodeCell" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="timecode" id="PWg-9M-9Vz" customClass="TimecodeCell" customModule="Podcast" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PWg-9M-9Vz" id="wRH-OK-x7p">
@@ -377,7 +377,7 @@
                                                         <action selector="removeTap" destination="PWg-9M-9Vz" eventType="touchUpInside" id="N4a-Ds-szi"/>
                                                     </connections>
                                                 </button>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Таймкод" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXZ-4f-xb9" customClass="TextField" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Таймкод" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXZ-4f-xb9" customClass="TextField" customModule="Podcast" customModuleProvider="target">
                                                     <rect key="frame" x="48" y="2" width="266" height="44"/>
                                                     <color key="backgroundColor" name="Colors/selectionGray"/>
                                                     <constraints>
@@ -392,7 +392,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4X-LG-rWd" customClass="TextField" customModule="vezdekod_10_podcast_mobile" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4X-LG-rWd" customClass="TextField" customModule="Podcast" customModuleProvider="target">
                                                     <rect key="frame" x="326" y="2" width="76" height="44"/>
                                                     <color key="backgroundColor" name="Colors/selectionGray"/>
                                                     <constraints>
@@ -483,6 +483,7 @@
                         <outlet property="rampAtTheEndButton" destination="GaY-bk-ztE" id="SJR-Jm-OrY"/>
                         <outlet property="rampAtTheStartButton" destination="KAl-en-X3l" id="MUp-2X-GOD"/>
                         <outlet property="tableView" destination="Lri-Eq-DFT" id="Fzx-l7-aB9"/>
+                        <outlet property="timelineView" destination="LBK-sQ-M5W" id="qXg-dm-zHt"/>
                         <outlet property="trimButton" destination="xpB-id-dyI" id="Vbm-xK-Omo"/>
                         <outlet property="undoButton" destination="Esd-so-Gyj" id="UXU-HH-xQr"/>
                         <outlet property="waveformView" destination="MT2-lM-2du" id="9gp-Tm-mH1"/>

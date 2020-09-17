@@ -9,16 +9,18 @@
 import Foundation
 import AVFoundation
 
+extension TimeInterval {
+    var timeString: String {
+        String(format: "%02d:%02d", Int(self) / 60 , Int(rounded()) % 60)
+    }
+}
+
 struct AudioFile {
     struct Timecode: Identifiable, Equatable {
         let id: String = UUID().uuidString
         
         var title: String
         var startTime: TimeInterval
-        
-        var startTimeString: String {
-            String(format: "%02d:%02d", Int(startTime) / 60 , Int(startTime.rounded()) % 60)
-        }
         
         mutating func updateStartTime(with startTimeString: String) {
             let values = startTimeString.split(separator: ":").compactMap { Int($0) }
